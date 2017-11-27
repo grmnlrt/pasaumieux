@@ -1,24 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+  margin: 0;
+  font-family: 'VT323', monospace;
 }
 
-a {
-  color: rgba(#000, 0.7);
+.banner {
+  background-position: center;
+  background-size: cover !important;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+  & > h1 {
+    font-size: 3em;
   }
-}
-
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
 }
