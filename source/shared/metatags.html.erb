@@ -1,0 +1,20 @@
+<% CURRENT_DOMMAIN = "http://www.pasaumieux.com" %>
+
+<title><%= current_page.data.title %></title>
+<meta name="description" content="<%= current_page.data.description %>">
+
+<!-- Facebook Open Graph data -->
+<meta property="og:title" content="<%= current_page.data.title %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<%= CURRENT_DOMMAIN + current_page.url %>" />
+<meta property="og:image" content="<%= yield_content(:image) %>" />
+<meta property="og:description" content="<%= current_page.data.description %>" />
+<meta property="og:site_name" content="pasaumieux.com" />
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- <meta name="twitter:site" content=""> -->
+<meta name="twitter:title" content="<%= current_page.data.title %>">
+<meta name="twitter:description" content="<%= current_page.data.description %>">
+<!-- <meta name="twitter:creator" content=""> -->
+<meta name="twitter:image:src" content="<%= yield_content(:image) %>">
