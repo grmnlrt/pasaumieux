@@ -8,35 +8,42 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     
 <title>pasaumieux.com</title>
-<meta name="description" content="">
+<meta name="description" content="pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com...">
 
 <!-- Facebook Open Graph data -->
 <meta property="og:title" content="pasaumieux.com" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.pasaumieux.com/" />
-<meta property="og:image" content="images/pasaumieux-2.jpg" />
-<meta property="og:description" content="" />
+<meta property="og:image" content="images/pasaumieux-1.jpg" />
+<meta property="og:description" content="pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com..." />
 <meta property="og:site_name" content="pasaumieux.com" />
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
 <!-- <meta name="twitter:site" content=""> -->
 <meta name="twitter:title" content="pasaumieux.com">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com, pasaumieux.com...">
 <!-- <meta name="twitter:creator" content=""> -->
-<meta name="twitter:image:src" content="images/pasaumieux-2.jpg">
+<meta name="twitter:image:src" content="images/pasaumieux-1.jpg">
 
     <link href="stylesheets/site.css" rel="stylesheet" />
     <link href="images/images/favicon.png" rel="icon" type="image/png" />
   </head>
   <body>
     
-
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 50%), url('images/pasaumieux-2.jpg');">
+<div id="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 50%), url('images/pasaumieux-1.jpg');">
   <h1>
     <span id="banner-typed-text"></span>
   </h1>
 </div>
+
+<script>
+  const banner = document.querySelector('#banner');
+  const images = ['pasaumieux-1.jpg', 'pasaumieux-2.jpg', 'pasaumieux-3.jpg', 'pasaumieux-4.jpg', 'pasaumieux-5.jpg'];
+  const randomImage = images[Math.floor(Math.random()*images.length)];
+
+  banner.style.backgroundImage = `linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%), url("/images/${randomImage}")`
+</script>
 
     <script src="javascripts/site.js"></script>
   </body>
