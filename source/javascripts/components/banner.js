@@ -12,7 +12,7 @@ function loadRandomPicture() {
   const banner = document.querySelector('#banner');
   const images = [];
   let i = 1;
-  for (i; i < 11; i++) {
+  for (i; i <= 16; i++) {
     images.push(`pasaumieux-${i}.jpg`)
   }
 
