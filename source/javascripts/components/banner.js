@@ -23,5 +23,14 @@ function loadRandomPicture() {
   }
 }
 
+function reloadButton() {
+  const button = document.querySelector('#reload-button');
+
+  if (button) {
+    button.addEventListener('click', loadRandomPicture)
+  }
+}
+
 export { loadDynamicBannerText };
 export { loadRandomPicture };
+export { reloadButton };
